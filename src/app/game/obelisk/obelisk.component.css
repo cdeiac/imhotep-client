@@ -1,0 +1,163 @@
+/*****************************************************************************************************/
+/* STATE UPDATE */
+/*****************************************************************************************************/
+.updated {
+  -webkit-box-shadow: 0 0 0 5px lime !important;
+  -moz-box-shadow: 0 0 0 5px lime !important;
+  box-shadow: 0 0 5px 5px lime !important; }
+
+.harbor {
+  position: absolute; }
+
+/*****************************************************************************************************/
+/* STONES */
+/*****************************************************************************************************/
+.BLACK {
+  color: white;
+  /*background-color: $BLACK-background;*/
+  background-image: url("/../../../assets/img/stone/stone_black.png");
+  background-size: 100% 100%; }
+
+.WHITE {
+  color: black;
+  /*background-color: $WHITE-background;*/
+  background-image: url("/../../../assets/img/stone/stone_white.png");
+  background-size: 100% 100%; }
+
+.BROWN {
+  color: black;
+  /*background-color: $BROWN-background;*/
+  background-image: url("/../../../assets/img/stone/stone_brown.png");
+  background-size: 100% 100%; }
+
+.GRAY {
+  color: black;
+  /*background-color: $GRAY-background;*/
+  background-image: url("/../../../assets/img/stone/stone_gray.png");
+  background-size: 100% 100%; }
+
+/*****************************************************************************************************/
+/* POPUP */
+/*****************************************************************************************************/
+/* container for popup */
+.site-name-popup {
+  position: absolute; }
+  .site-name-popup .name {
+    display: inline-block; }
+  .site-name-popup .rulesPopup {
+    display: inline-block; }
+    .site-name-popup .rulesPopup .popup-icon {
+      display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      /* Toggle this class - hide and show the popup */ }
+      .site-name-popup .rulesPopup .popup-icon.fa {
+        font-size: 3rem; }
+        .site-name-popup .rulesPopup .popup-icon.fa:hover {
+          color: whitesmoke; }
+      .site-name-popup .rulesPopup .popup-icon .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s; }
+
+/* The actual popup */
+.popup-text {
+  font-family: 'Rambla';
+  position: absolute;
+  padding: 10px 20px 20px 20px;
+  width: 300px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  background-image: url("/../../../assets/img/papyrus_roll.gif");
+  background-size: 100% 100%; }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.obelisk-container {
+  z-index: 8;
+  height: 140px;
+  width: 190px;
+  position: absolute;
+  left: 300px;
+  top: 40px;
+  border-radius: 20px; }
+
+.obelisk {
+  height: 160px;
+  position: relative; }
+  .obelisk .place {
+    float: left;
+    position: absolute;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 150%;
+    line-height: 50px;
+    text-align: center; }
+    .obelisk .place.BLACK {
+      top: 15px;
+      left: 15px; }
+    .obelisk .place.WHITE {
+      top: 15px;
+      right: 15px; }
+    .obelisk .place.BROWN {
+      bottom: 15px;
+      left: 15px; }
+    .obelisk .place.GRAY {
+      right: 15px;
+      bottom: 15px; }
+
+table, th, td {
+  border: 1px solid black; }
+
+th, td {
+  height: 20px;
+  padding: 10px; }
+
+th {
+  text-align: center; }
+
+.tables {
+  display: inline-flex; }
+
+.table1 {
+  margin-right: 10px; }
+
+.table2 {
+  margin-right: 10px; }
+
+/*******************************/
+.site-name-popup {
+  /* position of name and popup sign*/
+  left: 36px;
+  top: 47px; }
+
+.popup-text {
+  /* position of popup content */
+  top: -43px;
+  left: -364px;
+  padding-bottom: 35px;
+  /* adjustment */ }
+
+.harbor {
+  /* position of harbor */
+  top: 6px;
+  left: 63px; }
+
+/*******************************/
+
+/*# sourceMappingURL=obelisk.component.css.map */

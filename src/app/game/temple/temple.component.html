@@ -1,0 +1,93 @@
+<div class="temple-container">
+
+    <div class="site-name-popup">
+        <div class="name">
+            <h2>Temple</h2>
+        </div>
+        <div class="rulesPopup">
+            <i class="fa fa-question-circle popup-icon" aria-hidden="true" (mouseenter)="showPopUp=true" (mouseout)="showPopUp=false">
+                <span *ngIf="showPopUp" class="popup-text">
+                    <h2>Temple</h2>
+                    <p>For each stone delivered here, the owner of the stone earns points at the <b style="color:red">end of the round</b> if the stone is visible from above.</p>
+                    <p>The stone is placed on the next free space from the left, until the level is full.</p>
+                    <p>After a level is full, continue to the next level, beginning again from the left. The stones on the previous level (grayed out stones) are covered over.</p>
+                </span>
+            </i>
+        </div>
+    </div>
+    <site-harbor
+            [(HAS_DOCKED_SHIP)]="hasShipDocked"
+            [ORIENTATION]="'horizontal'"
+            [SITE_ID]="templeId"
+            [SHIP_WANTS_TO_SAIL]="SHIP_WANTS_TO_SAIL"
+            [(ROUND)]="ROUND"
+            [(IS_PLAYING_CARD)]="IS_PLAYING_CARD"
+            [(CARD_ID)]="CARD_ID"
+            [(CARD_TYPE)]="CARD_TYPE"
+            class="harbor">
+
+    </site-harbor>
+
+    <div id="totalStones" title="number of stones placed in the temple">
+        <span class="icon stoneIcon"></span><span class="nrOfStones">{{temple?.stones.length}}</span>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 temple">
+
+            <div *ngIf="numberOfPlayers < 3">
+                <div class="templeStones-secondLayer">
+                    <div *ngFor="let stone of secondLayer4" class="templeStone {{stone.color != undefined ? stone.color : ''}}" ></div>
+                </div>
+                <div class="templeStones">
+                    <div *ngFor="let stone of topLayer4" class="templeStone {{stone.color != undefined ? stone.color : ''}}" ></div>
+                </div>
+            </div>
+
+            <div *ngIf="numberOfPlayers > 2">
+                <div class="templeStones-secondLayer">
+                    <div *ngFor="let stone of secondLayer5" class="templeStone {{stone.color != undefined ? stone.color : ''}}" ></div>
+                </div>
+                <div class="templeStones">
+                    <div *ngFor="let stone of topLayer5" class="templeStone {{stone.color != undefined ? stone.color : ''}}" ></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div *ngIf="numberOfPlayers < 3" class="templeStones-grid">
+            <div class="templeStone-grid" [ngClass]="{updated: changedStones[0]!=undefined && changedStones[0]==true}">
+                <span *ngIf="nrOfStones%4 == 0" class="nextStoneIndicator"><i class="fa fa-arrow-down" aria-hidden="true" title="next stone will be placed here"></i></span>
+            </div>
+            <div class="templeStone-grid" [ngClass]="{updated: changedStones[1]!=undefined && changedStones[1]==true}">
+                <span *ngIf="nrOfStones%4 == 1" class="nextStoneIndicator"><i class="fa fa-arrow-down" aria-hidden="true" title="next stone will be placed here"></i></span>
+            </div>
+            <div class="templeStone-grid" [ngClass]="{updated: changedStones[2]!=undefined && changedStones[2]==true}">
+                <span *ngIf="nrOfStones%4 == 2" class="nextStoneIndicator"><i class="fa fa-arrow-down" aria-hidden="true" title="next stone will be placed here"></i></span>
+            </div>
+            <div class="templeStone-grid" [ngClass]="{updated: changedStones[3]!=undefined && changedStones[3]==true}">
+                <span *ngIf="nrOfStones%4 == 3" class="nextStoneIndicator"><i class="fa fa-arrow-down" aria-hidden="true" title="next stone will be placed here"></i></span>
+            </div>
+        </div>
+
+        <div *ngIf="numberOfPlayers > 2" class="templeStones-grid">
+            <div class="templeStone-grid" [ngClass]="{updated: changedStones[0]!=undefined && changedStones[0]==true}">
+                <span *ngIf="nrOfStones%5 == 0" class="nextStoneIndicator">
+                <i class="fa fa-arrow-down" aria-hidden="true" title="next stone will be placed here"></i></span>
+            </div>
+            <div class="templeStone-grid" [ngClass]="{updated: changedStones[1]!=undefined && changedStones[1]==true}">
+                <span *ngIf="nrOfStones%5 == 1" class="nextStoneIndicator"><i class="fa fa-arrow-down" aria-hidden="true" title="next stone will be placed here"></i></span>
+            </div>
+            <div class="templeStone-grid" [ngClass]="{updated: changedStones[2]!=undefined && changedStones[2]==true}">
+                <span *ngIf="nrOfStones%5 == 2" class="nextStoneIndicator"><i class="fa fa-arrow-down" aria-hidden="true" title="next stone will be placed here"></i></span>
+            </div>
+            <div class="templeStone-grid" [ngClass]="{updated: changedStones[3]!=undefined && changedStones[3]==true}">
+                <span *ngIf="nrOfStones%5 == 3" class="nextStoneIndicator"><i class="fa fa-arrow-down" aria-hidden="true" title="next stone will be placed here"></i></span>
+            </div>
+            <div class="templeStone-grid" [ngClass]="{updated: changedStones[4]!=undefined && changedStones[4]==true}">
+                <span *ngIf="nrOfStones%5 == 4" class="nextStoneIndicator"><i class="fa fa-arrow-down" aria-hidden="true" title="next stone will be placed here"></i></span>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,30 @@
+/*****************************************************************************************************/
+/* STATE UPDATE */
+/*****************************************************************************************************/
+.updated {
+  -webkit-box-shadow: 0 0 0 5px lime !important;
+  -moz-box-shadow: 0 0 0 5px lime !important;
+  box-shadow: 0 0 5px 5px lime !important;
+  transition: box-shadow s; }
+
+.harbor {
+  position: absolute; }
+
+.site-harbor-container {
+  z-index: 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(139, 139, 115, 0.66); }
+  .site-harbor-container.vertical {
+    width: 40px;
+    height: 140px; }
+  .site-harbor-container.horizontal {
+    width: 140px;
+    height: 40px; }
+  .site-harbor-container:hover {
+    cursor: default !important; }
+
+.dragOver {
+  background-color: rgba(0, 191, 255, 0.33); }
+
+/*# sourceMappingURL=site-harbor.component.css.map */

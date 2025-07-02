@@ -1,0 +1,365 @@
+@import "../../../assets/scss/_style";
+@import "../../../assets/scss/market_cards";
+
+.playerCards-container {
+  width: 170px;
+  margin-left: 17px;
+
+  .marketCard {
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    border: 1px solid black;
+    right: -220px;
+    bottom: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  .blueCardDetails {
+    position: absolute;
+    left: 121px;
+    bottom: -28px;
+    width: 950px;
+    height: 133px;
+    z-index: 200;
+    &:hover{
+      cursor: pointer !important;
+    }
+    .playCardInfo{
+      position: absolute;
+      left: 355px;
+      top: 125px;
+      height: 38px;
+      width: auto;
+      line-height: 30px;
+      font-size: 20px;
+      text-align: center;
+      background-color: #19aedd;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid white;
+      cursor: default;
+      color: white;
+    }
+    .cardWrapper {
+      position: relative;
+      display: inline-block;
+      z-index: 201;
+      &:first-child{
+        margin-left: 80px;
+      }
+      .marketCardDetail {
+        width: 200px;
+        height: 120px;
+        border: 1px solid black;
+        margin-right: 3px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        .cardBlur {
+          height: 120px;
+          width: 200px;
+          background-color: rgba(0, 0, 0, 0.71);
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+        }
+        .isPlayable{
+          position: absolute;
+          left: 10px;
+          top: 40px;
+          background-color: green;
+          color: white;
+          height: 15px;
+          width: 65px;
+          line-height: 10px;
+          font-size: 10px;
+          text-align: center;
+          padding: 3px;
+          border-radius: 5px;
+          transform: rotate(-10deg);
+        }
+        .isNotPlayable{
+          position: absolute;
+          left: 10px;
+          top: 40px;
+          background-color: #ff1f1f;
+          color: white;
+          height: 27px;
+          width: 65px;
+          line-height: 10px;
+          font-size: 10px;
+          text-align: center;
+          padding: 3px;
+          border-radius: 5px;
+          transform: rotate(-10deg);
+        }
+      }
+      .nrOfCards {
+        position: absolute;
+        left: 170px;
+        top: 25px;
+        height: 20px;
+        width: 20px;
+        background-color: #efffc7;
+        z-index: 300;
+        border-radius: 3px;
+        line-height: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .greenCardDetails {
+    position: absolute;
+    left: 20px;
+    bottom: -28px;
+    width: 1050px;
+    height: 133px;
+    .cardWrapper {
+      position: relative;
+      z-index: 200;
+      &:first-child{
+        margin-left: 181px;
+      }
+      .cardStack {
+        display: inline-block;
+        position: relative;
+
+        .marketCardDetail {
+          width: 200px;
+          height: 120px;
+          border: 1px solid black;
+          margin-right: 3px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          .cardBlur {
+            height: 120px;
+            width: 200px;
+            background-color: rgba(0, 0, 0, 0.71);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+          }
+        }
+        .nrOfCards {
+          position: absolute;
+          left: 170px;
+          top: 25px;
+          height: 20px;
+          width: 20px;
+          background-color: #efffc7;
+          z-index: 300;
+          border-radius: 3px;
+          line-height: 20px;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+
+    }
+  }
+
+  .purpleCardDetails {
+    position: absolute;
+    left: 70px;
+    bottom: -28px;
+    width: 535px;
+    height: 133px;
+
+    .cardWrapper {
+      position: relative;
+      display: inline-block;
+      z-index: 200;
+      margin-left: 129px;
+      .nrOfPurpleCards {
+        position: absolute;
+        left: 170px;
+        top: 11px;
+        height: 20px;
+        width: 20px;
+        background-color: #efffc7;
+        z-index: 300;
+        border-radius: 3px;
+        line-height: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .marketCardDetail {
+        position: absolute;
+        top: -14px;
+        left: 2px;
+        width: 200px;
+        height: 120px;
+        border: 1px solid black;
+        margin-right: 3px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        .cardBlur {
+          height: 120px;
+          width: 200px;
+          background-color: rgba(0, 0, 0, 0.71);
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+        }
+
+      }
+    }
+  }
+
+  .card {
+    height: 120px;
+    width: 200px;
+    &:hover{
+      -webkit-filter: blur(1px);
+      -moz-filter: blur(1px);
+      -o-filter: blur(1px);
+      -ms-filter: blur(1px);
+      filter: blur(1px);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+  }
+  .blurred {
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  .cardDetail {
+    z-index: 200;
+  }
+
+  .playCard {
+    border: 2px solid lime !important;
+  }
+
+  .playCard:hover {
+    border: 2px solid whitesmoke !important;
+    cursor: hand;
+
+  }
+
+  .cardSquares {
+    margin-top: 3px;
+    height: 21px;
+    width: 35px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 2px;
+  }
+
+  .cardSquares:hover {
+    border: 1px solid whitesmoke;
+    cursor: hand !important;
+  }
+
+  .cardSquare {
+    margin-top: 3px;
+    height: 18px;
+    width: 30px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .cards {
+
+    color: whitesmoke;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    z-index: 200;
+    line-height: 24px;
+    width: 40px;
+    height: 24px;
+
+    &:hover {
+      cursor: pointer !important;
+    }
+  }
+
+  .greenCards {
+    position: absolute;
+    left: 20px;
+    bottom: -28px;
+    background-color: green;
+  }
+
+  .purpleCards {
+    position: absolute;
+    left: 70px;
+    bottom: -28px;
+    background-color: rebeccapurple;
+  }
+
+  .blueCards {
+    position: absolute;
+    left: 121px;
+    bottom: -28px;
+    background-color: blue;
+  }
+
+  .clickable:hover {
+    cursor: hand;
+  }
+
+  .closeButton {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .closeButton:hover {
+    border: 1px solid #000000;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #F2994A, #F2994A);
+    opacity: 1.00;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: black;
+  }
+
+  .playButton {
+    position: absolute;
+    height: 120px;
+    width: 200px;
+    border: 2px solid white;
+    z-index: 300;
+    font-weight: bold;
+    line-height: 120px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    color: black;
+    .playButton-text{
+      padding: 3px 5px;
+      background-color: #0cc1ff;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold ;
+      border: 1px solid white;
+
+    }
+  }
+}
+
+

@@ -1,0 +1,274 @@
+.game-container {
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+  background: #525252 url('/../../assets/img/texture/gameBoard.png') no-repeat;
+
+  background-size: 100% 100%;
+  position: relative;
+
+  .sleds-container {
+    height: 768px;
+
+    .blackSled {
+      position: absolute;
+      top: 12px;
+      left: 5px;
+    }
+
+    .whiteSled {
+      position: absolute;
+      top: 194px;
+      left: 5px;
+    }
+
+    .graySled {
+      position: absolute;
+      bottom: 254px;
+      left: 5px;
+    }
+
+    .brownSled {
+      position: absolute;
+      bottom: 70px;
+      left: 5px;
+    }
+
+    #supplySled1, #supplySled2, #supplySled3, #supplySled4 {
+      border: 1px solid transparent;
+    }
+  }
+
+  .gameBoard-container {
+    position: relative;
+    height: 768px;
+    #gameInformation {
+      position: absolute;
+      left: 109px;
+      top: 0;
+      height: 30px;
+      width: auto;
+      z-index: 100;
+      #playCardInformation{
+        z-index: 1;
+        position: absolute;
+        left: -99px;
+        top: 610px;
+        height: 80px;
+        width: 265px;
+        padding: 10px 0;
+        background-color: rgba(255, 31, 31, 0.9);
+        font-size: 18px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+        .playerName{
+          padding: 3px 5px;
+          background-color: #003a90;
+          height: 14px;
+          color: white;
+          line-height: 14px;
+          text-align: center;
+          border-radius: 5px;
+        }
+        .playCardInformationText{
+          font-size: 16px;
+          line-height: 16px;
+          height: 70px;
+          padding: 5px;
+        }
+      }
+      .gameName {
+        float: left;
+        width: auto;
+        min-width: 75px;
+        height: 30px;
+        padding: 5px 10px;
+        text-align: center;
+        background-color: black;
+        position: relative;
+        top: 0;
+        border-radius: 0 0 0 10px;
+        color: white;
+        border: 1px solid whitesmoke;
+        border-top: none;
+        border-right: none;
+      }
+      .roundCounter {
+        float: left;
+        width: 75px;
+        height: 30px;
+        padding: 5px;
+        text-align: center;
+        background-color: black;
+        position: relative;
+        top: 0;
+        border-radius: 0 0 10px 0;
+        color: white;
+        border: 1px solid whitesmoke;
+        border-top: none;
+        border-left: none;
+        &.lastRound{
+          border-radius: 0 0 10px 10px !important;
+          margin-left: 10px;
+          border-left: 1px solid whitesmoke;
+        }
+      }
+      .subRoundIndicator {
+        float: left;
+        width: 60px;
+        height: 30px;
+        padding: 3px;
+        margin-left: 10px;
+        text-align: center;
+        background-color: #ff1f1f;
+        position: relative;
+        top: 0;
+        border-radius: 0 0 10px 10px;
+        color: white;
+        border: 1px solid whitesmoke;
+        border-top: none;
+        .cardIcon {
+          position: absolute;
+          left: 8px;
+          top: 4px;
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+          background: url('/../../assets/img/marketCards/card_icon.png');
+          background-size: 100% 100%;
+        }
+        .fa{
+          position: absolute;
+          right: 7px;
+          top: 7px;
+          height: 20px;
+          width: 20px;
+          display: inline-block;
+        }
+      }
+      .subRoundInformation{
+        z-index: 15;
+        position: absolute;
+        left: 235px;
+        top: 330px;
+        height: 120px;
+        width: 200px;
+        padding: 15px;
+        background-color: rgba(255, 31, 31, 0.9);
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 5px;
+        color: white;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+        .playerName{
+          padding: 3px 5px;
+          background-color: #003a90;
+          height: 16px;
+          color: white;
+          line-height: 16px;
+          text-align: center;
+          border-radius: 5px;
+        }
+      }
+    }
+
+  }
+
+  #manuals {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+
+    p {
+      position: relative;
+      right: 60px;
+      text-align: center;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
+  .pdf-container {
+    position: relative;
+    bottom: 31px;
+    margin-top: 1px;
+    text-align: center;
+    border: 1px solid #000000;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #F2994A, #F2994A);
+    opacity: 1.00;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    color: black;
+  }
+
+}
+
+.testData-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.loggedInPlayers-container {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.loggedInPlayers {
+  background-color: saddlebrown;
+  color: whitesmoke;
+  padding: 5px;
+}
+
+.currentGame {
+  background-color: firebrick;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.dummyDataCreation-container {
+  text-align: center;
+}
+
+.dummyDataCreation-container button {
+  border: 1px solid #000000;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #F2994A, #F2994A);
+  opacity: 1.00;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  color: black;
+}
+
+.winningScreen-container {
+  text-align: center;
+}
+
+.winningScreen-container button {
+  border: 1px solid #000000;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #F2994A, #F2994A);
+  opacity: 1.00;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  color: black;
+}
+
+.row {
+  margin: 0;
+}
+
+.col-md-3, .col-md-6, .col-md-12 {
+  padding: 0;
+}
+
+.gameMessage {
+  width: 100%;
+  font-size: 18px;
+  border: 1px solid black;
+  background-color: burlywood;
+}

@@ -1,0 +1,255 @@
+/*****************************************************************************************************/
+/* STATE UPDATE */
+/*****************************************************************************************************/
+.updated {
+  -webkit-box-shadow: 0 0 0 5px lime !important;
+  -moz-box-shadow: 0 0 0 5px lime !important;
+  box-shadow: 0 0 5px 5px lime !important; }
+
+.harbor {
+  position: absolute; }
+
+/*****************************************************************************************************/
+/* STONES */
+/*****************************************************************************************************/
+.BLACK {
+  color: white;
+  /*background-color: $BLACK-background;*/
+  background-image: url("/../../../assets/img/stone/stone_black.png");
+  background-size: 100% 100%; }
+
+.WHITE {
+  color: black;
+  /*background-color: $WHITE-background;*/
+  background-image: url("/../../../assets/img/stone/stone_white.png");
+  background-size: 100% 100%; }
+
+.BROWN {
+  color: black;
+  /*background-color: $BROWN-background;*/
+  background-image: url("/../../../assets/img/stone/stone_brown.png");
+  background-size: 100% 100%; }
+
+.GRAY {
+  color: black;
+  /*background-color: $GRAY-background;*/
+  background-image: url("/../../../assets/img/stone/stone_gray.png");
+  background-size: 100% 100%; }
+
+/*****************************************************************************************************/
+/* POPUP */
+/*****************************************************************************************************/
+/* container for popup */
+.site-name-popup {
+  position: absolute; }
+  .site-name-popup .name {
+    display: inline-block; }
+  .site-name-popup .rulesPopup {
+    display: inline-block; }
+    .site-name-popup .rulesPopup .popup-icon {
+      display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      /* Toggle this class - hide and show the popup */ }
+      .site-name-popup .rulesPopup .popup-icon.fa {
+        font-size: 3rem; }
+        .site-name-popup .rulesPopup .popup-icon.fa:hover {
+          color: whitesmoke; }
+      .site-name-popup .rulesPopup .popup-icon .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s; }
+
+/* The actual popup */
+.popup-text {
+  font-family: 'Rambla';
+  position: absolute;
+  padding: 10px 20px 20px 20px;
+  width: 300px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  background-image: url("/../../../assets/img/papyrus_roll.gif");
+  background-size: 100% 100%; }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.pyramid-container {
+  z-index: 9;
+  height: 250px;
+  width: 40%;
+  position: absolute;
+  right: 70px;
+  top: 0;
+  border-radius: 20px; }
+
+.pyramid-content-container {
+  height: 250px;
+  padding: 0; }
+
+.pyramid-wrapper {
+  position: absolute;
+  bottom: 6px;
+  left: 5px;
+  height: 240px;
+  width: 310px;
+  border-radius: 10px; }
+
+.bigPyramid-square {
+  position: absolute;
+  top: 40px;
+  left: 20px; }
+
+.middlePyramid-square {
+  position: absolute;
+  bottom: 75px;
+  left: 180px; }
+
+.smallPyramid-square {
+  position: absolute;
+  top: 75px;
+  right: 40px; }
+
+.middlePyramid {
+  height: 250px; }
+
+.smallPyramid {
+  height: 250px; }
+
+.additionalPyramidStones {
+  height: 250px; }
+
+.bigPyramid-stones {
+  padding: 0;
+  height: 120px;
+  width: 98%; }
+
+.middlePyramid-stones {
+  padding: 0;
+  height: 120px;
+  width: 98%; }
+
+.smallPyramid-stones {
+  padding: 0;
+  height: 120px;
+  width: 98%; }
+
+.stone {
+  width: 44px;
+  height: 44px;
+  margin: 1px 1px 1px 0; }
+
+.stone:first-child {
+  margin-top: 0 !important; }
+
+.additional-stoneRow {
+  padding: 0;
+  float: left;
+  width: 41px;
+  margin-top: 3px;
+  position: absolute;
+  right: -30px;
+  top: 25px; }
+
+.additionalStone {
+  width: 40px;
+  height: 40px;
+  margin: 1px 1px 1px 0;
+  text-align: center;
+  padding-top: 12px; }
+
+.stoneRow {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 44px; }
+
+/*PYRAMID GRID*/
+.bigPyramid-grid {
+  position: absolute;
+  bottom: 5px;
+  left: 0; }
+
+.middlePyramid-grid {
+  position: absolute;
+  top: 25px;
+  bottom: 0;
+  left: 0; }
+
+.smallPyramid-grid {
+  position: absolute;
+  top: 44px;
+  bottom: 0;
+  left: 0; }
+
+.bigPyramid-stones-grid {
+  padding: 0;
+  height: 120px;
+  width: 98%; }
+
+.middlePyramid-stones-grid {
+  padding: 0;
+  height: 120px;
+  width: 98%; }
+
+.smallPyramid-stones-grid {
+  padding: 0;
+  height: 120px;
+  width: 98%; }
+
+.stoneRow-grid {
+  margin: 0;
+  padding: 0;
+  float: left;
+  /*width: 44px;*/ }
+
+.stone-grid {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  margin: 1px 1px 1px 0;
+  border: 1px solid black;
+  color: black;
+  font-weight: 800;
+  font-size: 20px; }
+  .stone-grid .blueScore {
+    color: #3d77ae;
+    position: absolute;
+    left: 17px;
+    top: 0;
+    font-size: 14px;
+    font-weight: bolder; }
+
+/*******************************/
+.site-name-popup {
+  /* position of name and popup sign*/
+  bottom: 200px;
+  right: 80px; }
+
+.popup-text {
+  /* position of popup content */
+  top: 48px;
+  left: -576px; }
+
+.harbor {
+  /* position of harbor */
+  top: 24px;
+  left: -9px; }
+
+/*******************************/
+
+/*# sourceMappingURL=pyramid.component.css.map */

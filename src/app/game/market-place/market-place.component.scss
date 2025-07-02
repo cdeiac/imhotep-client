@@ -1,0 +1,107 @@
+@import "../../../assets/scss/_style";
+@import "../../../assets/scss/market_cards";
+@import "../../../assets/scss/_popup";
+
+// factor to make market cards smaller (relative to original size 500x300)
+$factor: 0.6;
+
+.market-place-container {
+  z-index: 10;
+  position: absolute;
+  right: 60px;
+  bottom: 5px;
+  height: 250px;
+  width: 310px;
+  border-radius: 20px;
+
+  .marketCard-wrapper {
+    position: absolute;
+    top: 74px;
+    left: 15px;
+
+    .marketCardPlace {
+      float: left;
+      width: 130px;
+      height: 80px;
+      margin: 1%;
+
+      .marketCard {
+        width: 130px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: 5px;
+
+        &:hover {
+          color: whitesmoke;
+          cursor: pointer;
+          font-weight: bold;
+          border: 3px solid whitesmoke;
+        }
+
+        .pick {
+          width: 100%;
+          height: 100%;
+          font-size: 20px;
+          background-color: rgba(128, 128, 128, 0.5);
+          color: black;
+          font-weight: bold;
+
+          z-index: 1;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .largeCard-container {
+    z-index: 200;
+    position: absolute;
+
+    /* center */
+    top: 53px;
+    left: -304px;
+
+    width: 500px * $factor;
+    height: 300px * $factor;
+
+    background-color: black;
+    border: 1px solid black;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    .card {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/*******************************/
+.site-name-popup {
+  /* position of name and popup sign*/
+  top: 10px;
+  right: 94px;
+}
+
+.popup-text {
+  /* position of popup content */
+  top: -78px;
+  right: 201px;
+  z-index: 100; /* adjustment */
+  padding-bottom: 40px; /* adjustment */
+}
+
+.harbor {
+  /* position of harbor */
+  top: -25px;
+  left: 87px;
+}
+
+/*******************************/

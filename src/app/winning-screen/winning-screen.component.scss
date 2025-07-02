@@ -1,0 +1,409 @@
+.winning-screen-container {
+  position: relative;
+  padding-top: 0;
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+
+    .content-wrapper {
+      position: relative;
+      .content {
+        color: white;
+        text-align: center;
+
+        .bigRound {
+          font-size: 60px;
+        }
+        .winner-outer{
+          margin-top: 90px;
+          .winner-text{
+            font-size: 45px;
+            color: green;
+            padding: 5px 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 40px;
+          }
+        }
+        .loser-outer{
+          margin-top: 90px;
+          .loser-text{
+            font-size: 45px;
+            color: red;
+            padding: 5px 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 40px;
+          }
+        }
+
+        button {
+          border: 1px solid #000000;
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #F2994A, #F2994A);
+          opacity: 1.00;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 4px;
+          color: black;
+          width: 100px;
+          padding: 10px 5px;
+        }
+      }
+
+      .welcome {
+        margin: 30px auto 0 auto;
+        color: white;
+        font-size: 60px;
+        width: 700px;
+        text-align: center;
+
+      }
+    }
+
+    table {
+      position: relative;
+
+      padding: 40px;
+      padding-bottom: 60px;
+      padding-top: 80px;
+      width: 80%;
+      border-collapse: separate;
+      border-radius: 10px;
+      color: white;
+      margin: auto;
+      margin-top: 15px;
+      font-weight: bolder;
+      background-color: rgba(0, 0, 0, 0.71);
+      &:hover {
+        box-shadow: none;
+      }
+      .gameName{
+        position: absolute;
+        left: 0;
+        top: 15px;
+        width: 100%;
+        font-size: 30px;
+        color: antiquewhite;
+      }
+      th, thead {
+        font-size: 24px;
+        height: 80px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      tr {
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 30px;
+        .scoreBoard-trophy{
+          width: 3%;
+          .scoreBoard-trophy-icon {
+            position: relative;
+            .fa{
+              position: absolute;
+              left: 0;
+              top: 15px;
+              color: gold;
+            }
+          }
+        }
+
+        .scoreBoard-username {
+          position: relative;
+          font-size: 24px;
+
+          .WHITE{
+            padding: 3px 5px;
+            background-color: white;
+            border-radius: 5px;
+            color: black;
+            min-width: 50px;
+            border: 1px solid black;
+
+          }
+          .BLACK{
+            padding: 3px 5px;
+            background-color: black;
+            border-radius: 5px;
+            color: white;
+            border: 1px solid white;
+          }
+          .GRAY{
+            padding: 3px 5px;
+            background-color: grey;
+            border-radius: 5px;
+            color: black;
+            border: 1px solid black;
+          }
+          .BROWN{
+            padding: 3px 5px;
+            background-color: brown;
+            border-radius: 5px;
+            color: white;
+            border: 1px solid white;
+          }
+        }
+        .scoreBoard-points {
+          .pointChanges {
+            font-size: 10px;
+            color: green;
+          }
+          &.total{
+            font-size: 20px;
+          }
+        }
+        .BLACK {
+          color: black;
+        }
+
+        .WHITE {
+          color: whitesmoke;
+        }
+
+        .BROWN {
+          color: #955050;
+        }
+
+        .GRAY {
+          color: #808080;
+        }
+      }
+      tr:hover {
+
+      }
+      td {
+        border-bottom: 1px solid grey;
+
+        text-align: center;
+      }
+      .tableFooter {
+        font-size: 12px;
+        line-height: 12px;
+        color: #434343;
+      }
+      .playerCol {
+        position: relative;
+        height: 50px;
+        width: 14.23%;
+        .playerCol-outer {
+          position: absolute;
+          left: 40px;
+          top: 5px;
+          height: 70px;
+          width: 70px;
+          background-color: deepskyblue;
+          padding: 5px;
+          border-radius: 5px;
+          .playerIcon {
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            height: 50px;
+            width: 50px;
+            background-size: 100% 100%;
+            .fa-user {
+              font-size: 40px;
+              color:  black;
+            }
+          }
+        }
+      }
+      .pyramidCol {
+        position: relative;
+        height: 50px;
+        width: 14.23%;
+        .pyramidCol-outer{
+          position: absolute;
+          left: 40px;
+          top: 5px;
+          height: 70px;
+          width: 70px;
+          background-color: deepskyblue;
+          padding: 5px;
+          border-radius: 5px;
+
+          .pyramidIcon{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            height: 50px;
+            width: 50px;
+            background: url('/../../assets/img/texture/pyramid_icon.png');
+            background-size: 100% 100%;
+            cursor: help;
+          }
+        }
+
+      }
+      .templeCol {
+        position: relative;
+        height: 50px;
+        width: 14.23%;
+        .templeCol-outer{
+          position: absolute;
+          left: 40px;
+          top: 5px;
+          height: 70px;
+          width: 70px;
+          background-color: deepskyblue;
+          padding: 5px;
+          border-radius: 5px;
+          .templeIcon{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            height: 50px;
+            width: 50px;
+            background: url('/../../assets/img/texture/temple_icon.png');
+            background-size: 100% 100%;
+            cursor: help;
+          }
+        }
+      }
+      .obeliskCol {
+        position: relative;
+        height: 50px;
+        width: 14.23%;
+        .obeliskCol-outer{
+          position: absolute;
+          left: 40px;
+          top: 5px;
+          height: 70px;
+          width: 70px;
+          background-color: deepskyblue;
+          padding: 5px;
+          border-radius: 5px;
+          .obeliskIcon{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            height: 50px;
+            width: 50px;
+            background: url('/../../assets/img/texture/obelisk_icon.png');
+            background-size: 100% 100%;
+            cursor: help;
+          }
+        }
+      }
+      .burialChamberCol {
+        position: relative;
+        height: 50px;
+        width: 14.23%;
+        .burialChamberCol-outer{
+          position: absolute;
+          left: 40px;
+          top: 5px;
+          height: 70px;
+          width: 70px;
+          background-color: deepskyblue;
+          padding: 5px;
+          border-radius: 5px;
+          .burialChamberIcon{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            height: 50px;
+            width: 50px;
+            background: url('/../../assets/img/texture/burial_chamber_icon.png');
+            background-size: 100% 100%;
+            cursor: help;
+          }
+        }
+      }
+      .marketCardsCol {
+        position: relative;
+        height: 50px;
+        width: 14.23%;
+        .marketCardsCol-outer{
+          position: absolute;
+          left: 40px;
+          top: 5px;
+          height: 70px;
+          width: 70px;
+          background-color: deepskyblue;
+          padding: 5px;
+          border-radius: 5px;
+          .cardIcon{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            height: 50px;
+            width: 50px;
+            background: url('/../../assets/img/marketCards/card_icon.png');
+            background-size: 100% 100%;
+            cursor: help;
+          }
+        }
+      }
+      .totalCol {
+        width: 14.23%;
+        font-size: 35px;
+      }
+    }
+  }
+
+.returnToLobbyButton{
+  position: absolute;
+  left: 580px;
+  bottom: 35px;
+  font-size: 24px;
+  button{
+    border: 1px solid #000000;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #F2994A, #F2994A);
+    opacity: 1.00;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    width: 190px;
+    height: 55px;
+    color: black;
+    margin-bottom: 5px;
+  }
+}
+
+.loggedInUser {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+
+  height: 50px;
+  margin: 10px 20px 10px 215px;
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #4C1803;
+  color: whitesmoke;
+  opacity: 0.9;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .userName {
+    margin: 0 15px 0 10px;
+  }
+
+  .fa {
+    margin-top: 4px;
+
+    &.fa-user {
+      float: left;
+    }
+
+    &.fa-sign-out {
+      float: right;
+
+      &:hover {
+        cursor: pointer;
+        color: #ff501b;
+      }
+    }
+  }
+}
+

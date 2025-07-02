@@ -1,0 +1,362 @@
+/*****************************************************************************************************/
+/* STATE UPDATE */
+/*****************************************************************************************************/
+.updated {
+  -webkit-box-shadow: 0 0 0 5px lime !important;
+  -moz-box-shadow: 0 0 0 5px lime !important;
+  box-shadow: 0 0 5px 5px lime !important; }
+
+.harbor {
+  position: absolute; }
+
+/*****************************************************************************************************/
+/* MARKET CARDS */
+/*****************************************************************************************************/
+/*blue*/
+.CHISEL {
+  background-image: url("/../../../assets/img/marketCards/market_card_blue_chisel.PNG");
+  background-size: 100% 100%; }
+
+.HAMMER {
+  background-image: url("/../../../assets/img/marketCards/market_card_blue_hammer.PNG");
+  background-size: 100% 100%; }
+
+.LEVER {
+  background-image: url("/../../../assets/img/marketCards/market_card_blue_lever.PNG");
+  background-size: 100% 100%; }
+
+.SAIL {
+  background-image: url("/../../../assets/img/marketCards/market_card_blue_sail.PNG");
+  background-size: 100% 100%; }
+
+/*blue*/
+/*green*/
+.BURIAL_CHAMBER_DECORATION {
+  background-image: url("/../../../assets/img/marketCards/market_card_green_burial_chamber_decoration.PNG");
+  background-size: 100% 100%; }
+
+.OBELISK_DECORATION {
+  background-image: url("/../../../assets/img/marketCards/market_card_green_obelisk_decoration.PNG");
+  background-size: 100% 100%; }
+
+.PYRAMID_DECORATION {
+  background-image: url("/../../../assets/img/marketCards/market_card_green_pyramid_decoration.PNG");
+  background-size: 100% 100%; }
+
+.TEMPLE_DECORATION {
+  background-image: url("/../../../assets/img/marketCards/market_card_green_temple_decoration.PNG");
+  background-size: 100% 100%; }
+
+/*green*/
+/*purple*/
+.STATUE {
+  background-image: url("/../../../assets/img/marketCards/market_purple_statue.PNG");
+  background-size: 100% 100%; }
+
+/*purple*/
+/*red*/
+.ENTRANCE {
+  background-image: url("/../../../assets/img/marketCards/market_red_entrance.PNG");
+  background-size: 100% 100%; }
+
+.PAVED_PATH {
+  background-image: url("/../../../assets/img/marketCards/market_red_paved_path.PNG");
+  background-size: 100% 100%; }
+
+.SARCOPHAGUS {
+  background-image: url("/../../../assets/img/marketCards/market_red_sarcophagus.PNG");
+  background-size: 100% 100%; }
+
+/*red*/
+.playerCards-container {
+  width: 170px;
+  margin-left: 17px; }
+  .playerCards-container .marketCard {
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    border: 1px solid black;
+    right: -220px;
+    bottom: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+  .playerCards-container .blueCardDetails {
+    position: absolute;
+    left: 121px;
+    bottom: -28px;
+    width: 950px;
+    height: 133px;
+    z-index: 200; }
+    .playerCards-container .blueCardDetails:hover {
+      cursor: pointer !important; }
+    .playerCards-container .blueCardDetails .playCardInfo {
+      position: absolute;
+      left: 355px;
+      top: 125px;
+      height: 38px;
+      width: auto;
+      line-height: 30px;
+      font-size: 20px;
+      text-align: center;
+      background-color: #19aedd;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid white;
+      cursor: default;
+      color: white; }
+    .playerCards-container .blueCardDetails .cardWrapper {
+      position: relative;
+      display: inline-block;
+      z-index: 201; }
+      .playerCards-container .blueCardDetails .cardWrapper:first-child {
+        margin-left: 80px; }
+      .playerCards-container .blueCardDetails .cardWrapper .marketCardDetail {
+        width: 200px;
+        height: 120px;
+        border: 1px solid black;
+        margin-right: 3px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px; }
+        .playerCards-container .blueCardDetails .cardWrapper .marketCardDetail .cardBlur {
+          height: 120px;
+          width: 200px;
+          background-color: rgba(0, 0, 0, 0.71);
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px; }
+        .playerCards-container .blueCardDetails .cardWrapper .marketCardDetail .isPlayable {
+          position: absolute;
+          left: 10px;
+          top: 40px;
+          background-color: green;
+          color: white;
+          height: 15px;
+          width: 65px;
+          line-height: 10px;
+          font-size: 10px;
+          text-align: center;
+          padding: 3px;
+          border-radius: 5px;
+          transform: rotate(-10deg); }
+        .playerCards-container .blueCardDetails .cardWrapper .marketCardDetail .isNotPlayable {
+          position: absolute;
+          left: 10px;
+          top: 40px;
+          background-color: #ff1f1f;
+          color: white;
+          height: 27px;
+          width: 65px;
+          line-height: 10px;
+          font-size: 10px;
+          text-align: center;
+          padding: 3px;
+          border-radius: 5px;
+          transform: rotate(-10deg); }
+      .playerCards-container .blueCardDetails .cardWrapper .nrOfCards {
+        position: absolute;
+        left: 170px;
+        top: 25px;
+        height: 20px;
+        width: 20px;
+        background-color: #efffc7;
+        z-index: 300;
+        border-radius: 3px;
+        line-height: 20px;
+        text-align: center;
+        font-weight: bold; }
+  .playerCards-container .greenCardDetails {
+    position: absolute;
+    left: 20px;
+    bottom: -28px;
+    width: 1050px;
+    height: 133px; }
+    .playerCards-container .greenCardDetails .cardWrapper {
+      position: relative;
+      z-index: 200; }
+      .playerCards-container .greenCardDetails .cardWrapper:first-child {
+        margin-left: 181px; }
+      .playerCards-container .greenCardDetails .cardWrapper .cardStack {
+        display: inline-block;
+        position: relative; }
+        .playerCards-container .greenCardDetails .cardWrapper .cardStack .marketCardDetail {
+          width: 200px;
+          height: 120px;
+          border: 1px solid black;
+          margin-right: 3px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px; }
+          .playerCards-container .greenCardDetails .cardWrapper .cardStack .marketCardDetail .cardBlur {
+            height: 120px;
+            width: 200px;
+            background-color: rgba(0, 0, 0, 0.71);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px; }
+        .playerCards-container .greenCardDetails .cardWrapper .cardStack .nrOfCards {
+          position: absolute;
+          left: 170px;
+          top: 25px;
+          height: 20px;
+          width: 20px;
+          background-color: #efffc7;
+          z-index: 300;
+          border-radius: 3px;
+          line-height: 20px;
+          text-align: center;
+          font-weight: bold; }
+  .playerCards-container .purpleCardDetails {
+    position: absolute;
+    left: 70px;
+    bottom: -28px;
+    width: 535px;
+    height: 133px; }
+    .playerCards-container .purpleCardDetails .cardWrapper {
+      position: relative;
+      display: inline-block;
+      z-index: 200;
+      margin-left: 129px; }
+      .playerCards-container .purpleCardDetails .cardWrapper .nrOfPurpleCards {
+        position: absolute;
+        left: 170px;
+        top: 11px;
+        height: 20px;
+        width: 20px;
+        background-color: #efffc7;
+        z-index: 300;
+        border-radius: 3px;
+        line-height: 20px;
+        text-align: center;
+        font-weight: bold; }
+      .playerCards-container .purpleCardDetails .cardWrapper .marketCardDetail {
+        position: absolute;
+        top: -14px;
+        left: 2px;
+        width: 200px;
+        height: 120px;
+        border: 1px solid black;
+        margin-right: 3px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px; }
+        .playerCards-container .purpleCardDetails .cardWrapper .marketCardDetail .cardBlur {
+          height: 120px;
+          width: 200px;
+          background-color: rgba(0, 0, 0, 0.71);
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px; }
+  .playerCards-container .card {
+    height: 120px;
+    width: 200px; }
+    .playerCards-container .card:hover {
+      -webkit-filter: blur(1px);
+      -moz-filter: blur(1px);
+      -o-filter: blur(1px);
+      -ms-filter: blur(1px);
+      filter: blur(1px);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px; }
+  .playerCards-container .blurred {
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+  .playerCards-container .cardDetail {
+    z-index: 200; }
+  .playerCards-container .playCard {
+    border: 2px solid lime !important; }
+  .playerCards-container .playCard:hover {
+    border: 2px solid whitesmoke !important;
+    cursor: hand; }
+  .playerCards-container .cardSquares {
+    margin-top: 3px;
+    height: 21px;
+    width: 35px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 2px; }
+  .playerCards-container .cardSquares:hover {
+    border: 1px solid whitesmoke;
+    cursor: hand !important; }
+  .playerCards-container .cardSquare {
+    margin-top: 3px;
+    height: 18px;
+    width: 30px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block; }
+  .playerCards-container .cards {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    z-index: 200;
+    line-height: 24px;
+    width: 40px;
+    height: 24px; }
+    .playerCards-container .cards:hover {
+      cursor: pointer !important; }
+  .playerCards-container .greenCards {
+    position: absolute;
+    left: 20px;
+    bottom: -28px;
+    background-color: green; }
+  .playerCards-container .purpleCards {
+    position: absolute;
+    left: 70px;
+    bottom: -28px;
+    background-color: rebeccapurple; }
+  .playerCards-container .blueCards {
+    position: absolute;
+    left: 121px;
+    bottom: -28px;
+    background-color: blue; }
+  .playerCards-container .clickable:hover {
+    cursor: hand; }
+  .playerCards-container .closeButton {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px; }
+  .playerCards-container .closeButton:hover {
+    border: 1px solid #000000;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #F2994A, #F2994A);
+    opacity: 1.00;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: black; }
+  .playerCards-container .playButton {
+    position: absolute;
+    height: 120px;
+    width: 200px;
+    border: 2px solid white;
+    z-index: 300;
+    font-weight: bold;
+    line-height: 120px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    color: black; }
+    .playerCards-container .playButton .playButton-text {
+      padding: 3px 5px;
+      background-color: #0cc1ff;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+      border: 1px solid white; }
+
+/*# sourceMappingURL=player-cards.component.css.map */

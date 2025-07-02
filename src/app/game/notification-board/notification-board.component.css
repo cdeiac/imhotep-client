@@ -1,0 +1,463 @@
+/*****************************************************************************************************/
+/* STATE UPDATE */
+/*****************************************************************************************************/
+.updated {
+  -webkit-box-shadow: 0 0 0 5px lime !important;
+  -moz-box-shadow: 0 0 0 5px lime !important;
+  box-shadow: 0 0 5px 5px lime !important; }
+
+.harbor {
+  position: absolute; }
+
+/*****************************************************************************************************/
+/* STONES */
+/*****************************************************************************************************/
+.BLACK {
+  color: white;
+  /*background-color: $BLACK-background;*/
+  background-image: url("/../../../assets/img/stone/stone_black.png");
+  background-size: 100% 100%; }
+
+.WHITE {
+  color: black;
+  /*background-color: $WHITE-background;*/
+  background-image: url("/../../../assets/img/stone/stone_white.png");
+  background-size: 100% 100%; }
+
+.BROWN {
+  color: black;
+  /*background-color: $BROWN-background;*/
+  background-image: url("/../../../assets/img/stone/stone_brown.png");
+  background-size: 100% 100%; }
+
+.GRAY {
+  color: black;
+  /*background-color: $GRAY-background;*/
+  background-image: url("/../../../assets/img/stone/stone_gray.png");
+  background-size: 100% 100%; }
+
+/*****************************************************************************************************/
+/* POPUP */
+/*****************************************************************************************************/
+/* container for popup */
+.site-name-popup {
+  position: absolute; }
+  .site-name-popup .name {
+    display: inline-block; }
+  .site-name-popup .rulesPopup {
+    display: inline-block; }
+    .site-name-popup .rulesPopup .popup-icon {
+      display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      /* Toggle this class - hide and show the popup */ }
+      .site-name-popup .rulesPopup .popup-icon.fa {
+        font-size: 3rem; }
+        .site-name-popup .rulesPopup .popup-icon.fa:hover {
+          color: whitesmoke; }
+      .site-name-popup .rulesPopup .popup-icon .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s; }
+
+/* The actual popup */
+.popup-text {
+  font-family: 'Rambla';
+  position: absolute;
+  padding: 10px 20px 20px 20px;
+  width: 300px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  background-image: url("/../../../assets/img/papyrus_roll.gif");
+  background-size: 100% 100%; }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/*****************************************************************************************************/
+/* STATE UPDATE */
+/*****************************************************************************************************/
+.updated {
+  -webkit-box-shadow: 0 0 0 5px lime !important;
+  -moz-box-shadow: 0 0 0 5px lime !important;
+  box-shadow: 0 0 5px 5px lime !important; }
+
+.harbor {
+  position: absolute; }
+
+/*****************************************************************************************************/
+/* MARKET CARDS */
+/*****************************************************************************************************/
+/*blue*/
+.CHISEL {
+  background-image: url("/../../../assets/img/marketCards/market_card_blue_chisel.PNG");
+  background-size: 100% 100%; }
+
+.HAMMER {
+  background-image: url("/../../../assets/img/marketCards/market_card_blue_hammer.PNG");
+  background-size: 100% 100%; }
+
+.LEVER {
+  background-image: url("/../../../assets/img/marketCards/market_card_blue_lever.PNG");
+  background-size: 100% 100%; }
+
+.SAIL {
+  background-image: url("/../../../assets/img/marketCards/market_card_blue_sail.PNG");
+  background-size: 100% 100%; }
+
+/*blue*/
+/*green*/
+.BURIAL_CHAMBER_DECORATION {
+  background-image: url("/../../../assets/img/marketCards/market_card_green_burial_chamber_decoration.PNG");
+  background-size: 100% 100%; }
+
+.OBELISK_DECORATION {
+  background-image: url("/../../../assets/img/marketCards/market_card_green_obelisk_decoration.PNG");
+  background-size: 100% 100%; }
+
+.PYRAMID_DECORATION {
+  background-image: url("/../../../assets/img/marketCards/market_card_green_pyramid_decoration.PNG");
+  background-size: 100% 100%; }
+
+.TEMPLE_DECORATION {
+  background-image: url("/../../../assets/img/marketCards/market_card_green_temple_decoration.PNG");
+  background-size: 100% 100%; }
+
+/*green*/
+/*purple*/
+.STATUE {
+  background-image: url("/../../../assets/img/marketCards/market_purple_statue.PNG");
+  background-size: 100% 100%; }
+
+/*purple*/
+/*red*/
+.ENTRANCE {
+  background-image: url("/../../../assets/img/marketCards/market_red_entrance.PNG");
+  background-size: 100% 100%; }
+
+.PAVED_PATH {
+  background-image: url("/../../../assets/img/marketCards/market_red_paved_path.PNG");
+  background-size: 100% 100%; }
+
+.SARCOPHAGUS {
+  background-image: url("/../../../assets/img/marketCards/market_red_sarcophagus.PNG");
+  background-size: 100% 100%; }
+
+/*red*/
+.notificationBoard-container {
+  position: absolute;
+  right: 0;
+  top: 200px;
+  overflow: hidden;
+  height: 256px;
+  width: 437px; }
+  .notificationBoard-container #notificationBoardDropDownClicker {
+    height: 200px;
+    width: 35px;
+    float: right;
+    cursor: pointer;
+    padding: 3px;
+    text-align: center;
+    background-color: #3d77ae;
+    position: relative;
+    top: 3px;
+    z-index: 502;
+    cursor: pointer;
+    border-radius: 10px 0 0 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid whitesmoke;
+    border-right: none; }
+    .notificationBoard-container #notificationBoardDropDownClicker:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+      background-color: #449edc; }
+    .notificationBoard-container #notificationBoardDropDownClicker .notificationBoardDropDownClicker-text {
+      position: absolute;
+      left: 33px;
+      top: 0;
+      transform: rotate(90deg);
+      transform-origin: left top 0;
+      width: 200px;
+      height: 35px; }
+  .notificationBoard-container #notifications {
+    position: absolute;
+    z-index: 501;
+    right: -500px;
+    -webkit-transition: right 1s;
+    -moz-transition: right 1s;
+    -o-transition: right 1s;
+    transition: right 1s;
+    width: 400px;
+    height: 260px;
+    overflow-y: auto; }
+    .notificationBoard-container #notifications .message {
+      position: relative;
+      height: 60px;
+      padding: 3px;
+      border: 1px solid white;
+      margin: 3px;
+      border-radius: 5px; }
+      .notificationBoard-container #notifications .message:hover {
+        border: 1px solid deepskyblue; }
+      .notificationBoard-container #notifications .message .messageText {
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        height: 20px;
+        font-size: 16px; }
+      .notificationBoard-container #notifications .message .messageText-userName {
+        position: absolute;
+        left: 20px;
+        top: 8px;
+        padding: 3px 5px;
+        background-color: #003a90;
+        color: white;
+        line-height: 16px;
+        text-align: center;
+        border-radius: 5px; }
+      .notificationBoard-container #notifications .message .newest {
+        position: absolute;
+        right: 115px;
+        top: 4px;
+        color: lime;
+        font-size: 12px; }
+      .notificationBoard-container #notifications .message .subround {
+        position: absolute;
+        right: 50px;
+        top: 4px;
+        color: orangered;
+        font-size: 12px; }
+      .notificationBoard-container #notifications .message .wasSailed {
+        position: absolute;
+        right: 50px;
+        top: -60px;
+        color: #0cc1ff;
+        font-size: 12px; }
+      .notificationBoard-container #notifications .message .icon {
+        position: absolute;
+        right: 5px;
+        bottom: 10px;
+        height: 30px;
+        width: 30px; }
+      .notificationBoard-container #notifications .message .shipIcon {
+        background: url("/../../../assets/img/ship/ship_icon.png");
+        background-size: 100% 100%; }
+      .notificationBoard-container #notifications .message .stoneIcon {
+        background: url("/../../../assets/img/stone/stone_icon.png");
+        background-size: 100% 100%; }
+      .notificationBoard-container #notifications .message .quarryIcon {
+        background: url("/../../../assets/img/supplySled/pickax_icon.png");
+        background-size: 100% 100%; }
+      .notificationBoard-container #notifications .message .cardIcon {
+        background: url("/../../../assets/img/marketCards/card_icon.png");
+        background-size: 100% 100%; }
+      .notificationBoard-container #notifications .message .iconBackground {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 58px;
+        width: 40px;
+        border-radius: 0 5px 5px 0;
+        background-color: deepskyblue; }
+    .notificationBoard-container #notifications .blackMessage {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white; }
+      .notificationBoard-container #notifications .blackMessage:hover {
+        background-color: black; }
+    .notificationBoard-container #notifications .whiteMessage {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: black; }
+      .notificationBoard-container #notifications .whiteMessage:hover {
+        background-color: white; }
+    .notificationBoard-container #notifications .redMessage {
+      background-color: rgba(165, 42, 42, 0.8);
+      color: white; }
+      .notificationBoard-container #notifications .redMessage:hover {
+        background-color: brown; }
+    .notificationBoard-container #notifications .greyMessage {
+      background-color: rgba(128, 128, 128, 0.8);
+      color: black; }
+      .notificationBoard-container #notifications .greyMessage:hover {
+        background-color: grey; }
+  .notificationBoard-container ::-webkit-scrollbar {
+    width: 12px;
+    /* for vertical scrollbars */
+    height: 12px;
+    /* for horizontal scrollbars */ }
+  .notificationBoard-container ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); }
+  .notificationBoard-container ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5); }
+
+.blurScreen {
+  z-index: 500;
+  position: absolute;
+  top: 0;
+  left: -228px;
+  width: 1367px;
+  height: 768px;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.moveLogBackground {
+  z-index: 500;
+  position: absolute;
+  top: 0;
+  left: -228px;
+  width: 1367px;
+  height: 768px; }
+  .moveLogBackground .sailMoveDetail {
+    width: 55px;
+    height: 55px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #0cc1ff !important; }
+    .moveLogBackground .sailMoveDetail.TEMPLE {
+      position: absolute;
+      left: 710px;
+      bottom: 190px;
+      background: url("/../../../assets/img/texture/temple_icon.png");
+      background-size: 100% 100%; }
+    .moveLogBackground .sailMoveDetail.BURIAL_CHAMBER {
+      position: absolute;
+      left: 787px;
+      bottom: 389px;
+      background: url("/../../../assets/img/texture/burial_chamber_icon.png");
+      background-size: 100% 100%; }
+    .moveLogBackground .sailMoveDetail.OBELISK {
+      position: absolute;
+      left: 635px;
+      bottom: 515px;
+      background: url("/../../../assets/img/texture/obelisk_icon.png");
+      background-size: 100% 100%; }
+    .moveLogBackground .sailMoveDetail.PYRAMID {
+      position: absolute;
+      left: 825px;
+      bottom: 645px;
+      background: url("/../../../assets/img/texture/pyramid_icon.png");
+      background-size: 100% 100%; }
+    .moveLogBackground .sailMoveDetail.MARKET_PLACE {
+      position: absolute;
+      left: 1125px;
+      bottom: 232px;
+      background: url("/../../../assets/img/texture/market_icon.png");
+      background-size: 100% 100%; }
+    .moveLogBackground .sailMoveDetail .shipIcon {
+      position: absolute;
+      left: 5px;
+      bottom: 0;
+      height: 50px;
+      width: 50px;
+      background: url("/../../../assets/img/ship/ship_icon.png");
+      background-size: 100% 100%; }
+    .moveLogBackground .sailMoveDetail .wavesIcon {
+      position: absolute;
+      left: 70px;
+      bottom: 0;
+      height: 50px;
+      width: 50px;
+      background: url("/../../../assets/img/texture/waves_icon.png");
+      background-size: 100% 100%; }
+    .moveLogBackground .sailMoveDetail .siteIcon {
+      position: absolute;
+      left: 5px;
+      bottom: 5px;
+      height: 50px;
+      width: 50px; }
+  .moveLogBackground .getCardMoveDetail {
+    position: absolute;
+    left: 250px;
+    top: 135px; }
+    .moveLogBackground .getCardMoveDetail .marketCard {
+      width: 200px;
+      height: 120px;
+      border: 1px solid black;
+      margin-right: 3px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px; }
+      .moveLogBackground .getCardMoveDetail .marketCard .receivedCard, .moveLogBackground .getCardMoveDetail .marketCard .playedCard {
+        transform: rotate(-10deg);
+        position: absolute;
+        left: 54px;
+        bottom: 43px;
+        color: red;
+        font-size: 25px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        width: 100px;
+        text-shadow: 2px 2px 2px black; }
+      .moveLogBackground .getCardMoveDetail .marketCard .blur {
+        position: absolute;
+        top: 0;
+        left: 0; }
+  .moveLogBackground .lastRound-message {
+    position: absolute;
+    left: 580px;
+    bottom: 385px;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    transform: rotate(-10deg);
+    text-shadow: 2px 2px 2px black;
+    font-size: 30px; }
+
+#lastMovePopup {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  height: 60px;
+  width: 265px;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  margin: 0;
+  border-radius: 5px;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 800;
+  font-size: 14px; }
+  #lastMovePopup #lastMovePopup:hover {
+    cursor: pointer !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important; }
+  #lastMovePopup .messageText-userName {
+    padding: 3px 5px;
+    background-color: #003a90;
+    color: white;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 5px; }
+  #lastMovePopup .lastMovePopup-text {
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    padding: 3px; }
+
+.step {
+  opacity: 0.2 !important;
+  transition: .5s ease-in-out all;
+  z-index: 500;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important; }
+
+/*# sourceMappingURL=notification-board.component.css.map */

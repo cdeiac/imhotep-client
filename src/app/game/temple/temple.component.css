@@ -1,0 +1,194 @@
+/*****************************************************************************************************/
+/* STATE UPDATE */
+/*****************************************************************************************************/
+.updated {
+  -webkit-box-shadow: 0 0 0 5px lime !important;
+  -moz-box-shadow: 0 0 0 5px lime !important;
+  box-shadow: 0 0 5px 5px lime !important; }
+
+.harbor {
+  position: absolute; }
+
+/*****************************************************************************************************/
+/* STONES */
+/*****************************************************************************************************/
+.BLACK {
+  color: white;
+  /*background-color: $BLACK-background;*/
+  background-image: url("/../../../assets/img/stone/stone_black.png");
+  background-size: 100% 100%; }
+
+.WHITE {
+  color: black;
+  /*background-color: $WHITE-background;*/
+  background-image: url("/../../../assets/img/stone/stone_white.png");
+  background-size: 100% 100%; }
+
+.BROWN {
+  color: black;
+  /*background-color: $BROWN-background;*/
+  background-image: url("/../../../assets/img/stone/stone_brown.png");
+  background-size: 100% 100%; }
+
+.GRAY {
+  color: black;
+  /*background-color: $GRAY-background;*/
+  background-image: url("/../../../assets/img/stone/stone_gray.png");
+  background-size: 100% 100%; }
+
+/*****************************************************************************************************/
+/* POPUP */
+/*****************************************************************************************************/
+/* container for popup */
+.site-name-popup {
+  position: absolute; }
+  .site-name-popup .name {
+    display: inline-block; }
+  .site-name-popup .rulesPopup {
+    display: inline-block; }
+    .site-name-popup .rulesPopup .popup-icon {
+      display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      /* Toggle this class - hide and show the popup */ }
+      .site-name-popup .rulesPopup .popup-icon.fa {
+        font-size: 3rem; }
+        .site-name-popup .rulesPopup .popup-icon.fa:hover {
+          color: whitesmoke; }
+      .site-name-popup .rulesPopup .popup-icon .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s; }
+
+/* The actual popup */
+.popup-text {
+  font-family: 'Rambla';
+  position: absolute;
+  padding: 10px 20px 20px 20px;
+  width: 300px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  background-image: url("/../../../assets/img/papyrus_roll.gif");
+  background-size: 100% 100%; }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.temple-container {
+  z-index: 9;
+  width: 27%;
+  position: absolute;
+  left: 272px;
+  bottom: -5px; }
+
+#totalStones {
+  position: absolute;
+  right: 130px;
+  bottom: 93px;
+  height: 30px;
+  width: 50px; }
+  #totalStones:hover {
+    cursor: help; }
+  #totalStones .stoneIcon {
+    background: url("/../../../assets/img/stone/stone_icon.png");
+    background-size: 100% 100%; }
+  #totalStones .icon {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 30px; }
+  #totalStones .nrOfStones {
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 20px; }
+
+.temple {
+  height: 55px;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 43px; }
+
+.templeStones {
+  margin-left: auto;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 10px; }
+
+.templeStones-secondLayer {
+  margin-left: auto;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 10px; }
+  .templeStones-secondLayer .templeStone {
+    opacity: 0.6; }
+
+.templeStone {
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 2px; }
+
+.templeStones-grid {
+  margin-left: auto;
+  padding: 0;
+  position: absolute;
+  bottom: 19px;
+  left: 53px;
+  width: 270px; }
+  .templeStones-grid .templeStone-grid {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 2px;
+    border: 1px solid black; }
+    .templeStones-grid .templeStone-grid .nextStoneIndicator {
+      position: absolute;
+      top: -18px;
+      right: -22px;
+      color: #f60502;
+      width: 52px;
+      font-size: 12px;
+      font-weight: bold; }
+      .templeStones-grid .templeStone-grid .nextStoneIndicator .fa:hover {
+        cursor: help; }
+
+/*******************************/
+.site-name-popup {
+  /* position of name and popup sign*/
+  bottom: 133px;
+  right: 12px; }
+
+.popup-text {
+  /* position of popup content */
+  bottom: 30px;
+  left: -330px; }
+
+.harbor {
+  /* position of harbor */
+  top: -240px;
+  left: 166px; }
+
+/*******************************/
+
+/*# sourceMappingURL=temple.component.css.map */

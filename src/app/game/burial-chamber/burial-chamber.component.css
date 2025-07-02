@@ -1,0 +1,211 @@
+/*****************************************************************************************************/
+/* STATE UPDATE */
+/*****************************************************************************************************/
+.updated {
+  -webkit-box-shadow: 0 0 0 5px lime !important;
+  -moz-box-shadow: 0 0 0 5px lime !important;
+  box-shadow: 0 0 5px 5px lime !important; }
+
+.harbor {
+  position: absolute; }
+
+/*****************************************************************************************************/
+/* STONES */
+/*****************************************************************************************************/
+.BLACK {
+  color: white;
+  /*background-color: $BLACK-background;*/
+  background-image: url("/../../../assets/img/stone/stone_black.png");
+  background-size: 100% 100%; }
+
+.WHITE {
+  color: black;
+  /*background-color: $WHITE-background;*/
+  background-image: url("/../../../assets/img/stone/stone_white.png");
+  background-size: 100% 100%; }
+
+.BROWN {
+  color: black;
+  /*background-color: $BROWN-background;*/
+  background-image: url("/../../../assets/img/stone/stone_brown.png");
+  background-size: 100% 100%; }
+
+.GRAY {
+  color: black;
+  /*background-color: $GRAY-background;*/
+  background-image: url("/../../../assets/img/stone/stone_gray.png");
+  background-size: 100% 100%; }
+
+/*****************************************************************************************************/
+/* POPUP */
+/*****************************************************************************************************/
+/* container for popup */
+.site-name-popup {
+  position: absolute; }
+  .site-name-popup .name {
+    display: inline-block; }
+  .site-name-popup .rulesPopup {
+    display: inline-block; }
+    .site-name-popup .rulesPopup .popup-icon {
+      display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      /* Toggle this class - hide and show the popup */ }
+      .site-name-popup .rulesPopup .popup-icon.fa {
+        font-size: 3rem; }
+        .site-name-popup .rulesPopup .popup-icon.fa:hover {
+          color: whitesmoke; }
+      .site-name-popup .rulesPopup .popup-icon .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s; }
+
+/* The actual popup */
+.popup-text {
+  font-family: 'Rambla';
+  position: absolute;
+  padding: 10px 20px 20px 20px;
+  width: 300px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  background-image: url("/../../../assets/img/papyrus_roll.gif");
+  background-size: 100% 100%; }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.burial-chamber-container {
+  z-index: 10;
+  height: 143px;
+  width: 542px;
+  position: absolute;
+  right: 10px;
+  top: 255px; }
+
+.burial-chamber {
+  height: 150px; }
+
+.playerStones {
+  position: absolute;
+  bottom: -11px;
+  left: 37px; }
+
+.burial-chamber-stones {
+  margin: 4px 0 0 5px;
+  padding: 0;
+  height: 141px;
+  width: 98%; }
+
+.stoneRow {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 48px;
+  z-index: 10; }
+
+.stone {
+  width: 45px;
+  height: 45px;
+  margin: 1px; }
+
+.stone:first-child {
+  margin-top: 0 !important; }
+
+/*GRID START*/
+.burial-chamber-grid {
+  position: absolute;
+  bottom: -11px;
+  left: 37px; }
+
+.stoneRow-grid {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 48px; }
+
+.burial-chamber-stones-grid {
+  margin-left: 5px;
+  padding: 0;
+  height: 141px;
+  width: 98%;
+  position: relative; }
+  .burial-chamber-stones-grid .nextStoneIndicator {
+    font-size: 12px;
+    position: absolute;
+    left: 17px;
+    top: -16px;
+    color: rgba(0, 0, 0, 0.5); }
+  .burial-chamber-stones-grid .redArrow {
+    color: #f60502; }
+    .burial-chamber-stones-grid .redArrow:hover {
+      cursor: help; }
+
+.stone-grid {
+  width: 45px;
+  height: 45px;
+  margin: 1px 1px 1px 1px;
+  border: 1px solid black; }
+
+/*GRID END*/
+table {
+  border-collapse: collapse;
+  margin: 0 auto; }
+
+table, th, td {
+  border: 1px solid black;
+  margin-bottom: 10px; }
+
+th, td {
+  height: 20px;
+  padding: 10px; }
+
+th {
+  text-align: center; }
+
+::-webkit-scrollbar {
+  width: 12px;
+  /* for vertical scrollbars */
+  height: 12px;
+  /* for horizontal scrollbars */ }
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); }
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5); }
+
+/*******************************/
+.site-name-popup {
+  /* position of name and popup sign*/
+  left: 71px;
+  bottom: 150px; }
+
+.popup-text {
+  /* position of popup content */
+  top: 31px;
+  left: -388px;
+  padding-top: 40px;
+  /* adjustment */
+  padding-bottom: 50px;
+  /* adjustment */ }
+
+.harbor {
+  /* position of harbor */
+  top: 28px;
+  left: -19px; }
+
+/*******************************/
+
+/*# sourceMappingURL=burial-chamber.component.css.map */
